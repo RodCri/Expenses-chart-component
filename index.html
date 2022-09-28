@@ -2,42 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="author" content="Cristian Camilo Rodriguez">
+  <meta name="description" content="Expenses chart Frontend Mentor">
 </head>
 <body>
+  <main class="container">
+    <div class="balance">
+      <div class="">
+        <p class="balance__title">My balance</p>
+        <p class="balance__price">$921.48</p>
+      </div>
+      <img src="images/logo.svg" alt="logo" class="balance__logo">
+    </div>
+    <div class="chart">
+      <h2 class="chart__title">Spending - Last 7 days</h2>
+      <div class="chart__bars-container">
 
-  My balance
-  $921.48
+        <!-- <div class="chart__bar">
+          <div class="chart__bar--label">$35.20</div>
+          <div class="chart__bar--day">mon</div>
+        </div> -->
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      </div>
+      <div class="chart__analitics">
+        <div class="">
+          <p class="chart__total">Total this month</p>
+          <p class="chart__total-value">$478.33</p>
+        </div>
+        <div class="">
+          <p class="chart__percentage">+2.4%</p>
+          <p class="chart__period">From last month</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
