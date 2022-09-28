@@ -107,5 +107,66 @@ body {
   width: 32px;
   text-align: center;
 }
+.chart__bar:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+.chart__analitics {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  font-size: 0.7em;
+  border-top: 2px solid hsl(27deg, 66%, 92%);
+}
+.chart__total {
+  margin-bottom: 8px;
+}
+.chart__total-value {
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+  font-size: 1.4em;
+}
+.chart__percentage {
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+  text-align: right;
+  margin-top: 18px;
+}
+@media (min-width: 600px) {
+  .chart {
+    height: 512px;
+    padding: 44px;
+  }
+  .chart__title {
+    font-size: 2em;
+  }
+  .chart__bars-container {
+    margin-bottom: 50px;
+  }
+  .chart__bar {
+    width: 50px;
+  }
+  .chart__bar--label {
+    width: 54px;
+    font-size: 0.7em;
+    top: -32px;
+    left: 2px;
+  }
+  .chart__bar--day {
+    width: 54px;
+    bottom: -24px;
+    font-size: 0.8em;
+  }
+  .chart__analitics {
+    font-size: 1em;
+    padding-top: 32px;
+  }
+  .chart__total-value {
+    font-size: 2.4em;
+  }
+  .chart__percentage {
+    margin-top: 30px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
